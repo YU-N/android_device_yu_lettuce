@@ -104,6 +104,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE:= mm-qcamera-app
 LOCAL_32_BIT_ONLY := true
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_EXECUTABLE)
 endif
 
@@ -210,6 +211,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH_32 := $(TARGET_OUT_VENDOR)/lib
 
 LOCAL_MODULE:= libmm-qcamera
+LOCAL_VENDOR_MODULE := true
 LOCAL_32_BIT_ONLY := true
 include $(BUILD_SHARED_LIBRARY)
 endif
