@@ -6,7 +6,8 @@ LOCAL_CLANG_CFLAGS += \
         -Wno-error=strlcpy-strlcat-size \
         -Wno-error=gnu-designator \
         -Wno-error=unused-variable \
-        -Wno-error=format
+        -Wno-error=format \
+        -Wno-error=unused-parameter
 
 LOCAL_SRC_FILES := \
         QCamera2Factory.cpp \
@@ -31,6 +32,7 @@ LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 #ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
 LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
 #endif
+LOCAL_CFLAGS += -DDEFAULT_ZSL_MODE_ON
 
 #Debug logs are enabled
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
